@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="695*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Connexion" HorizontalAlignment="Left" Margin="218.273,307,0,0" VerticalAlignment="Top" Width="157" AutomationProperties.Name="btnConnexion" Click="Button_Click" Height="29" RenderTransformOrigin="0.812,0.387" Grid.Column="2"/>
+        <Label Content="Identifiant : " HorizontalAlignment="Left" Margin="136.273,151,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblIdentifiant" Grid.Column="2"/>
+        <Label Content="Mot de passe : " HorizontalAlignment="Left" Margin="118.273,207,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblMotDePasse" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="243.273,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbIdentifiant" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="243.273,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbMotDePasse" TextChanged="TextBox_TextChanged_1" Grid.Column="2"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="472,267,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2"/>
+
+    </Grid>
+</Window>
