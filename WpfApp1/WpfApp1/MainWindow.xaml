@@ -8,16 +8,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="55*"/>
             <ColumnDefinition Width="34*"/>
-            <ColumnDefinition Width="695*"/>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="627*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Connexion" HorizontalAlignment="Left" Margin="218.273,307,0,0" VerticalAlignment="Top" Width="157" AutomationProperties.Name="btnConnexion" Click="Button_Click" Height="29" RenderTransformOrigin="0.812,0.387" Grid.Column="2"/>
-        <Label Content="Identifiant : " HorizontalAlignment="Left" Margin="136.273,151,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblIdentifiant" Grid.Column="2"/>
-        <Label Content="Mot de passe : " HorizontalAlignment="Left" Margin="118.273,207,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblMotDePasse" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="243.273,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbIdentifiant" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="243.273,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbMotDePasse" TextChanged="TextBox_TextChanged_1" Grid.Column="2"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="472,267,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2"/>
+        <Button Content="Connexion" HorizontalAlignment="Left" Margin="150,307,0,0" VerticalAlignment="Top" Width="157" AutomationProperties.Name="btnConnexion" Click="Button_Click" Height="29" RenderTransformOrigin="0.812,0.387" Grid.Column="4"/>
+        <Label Content="Identifiant : " HorizontalAlignment="Left" Margin="68,151,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblIdentifiant" Grid.Column="4"/>
+        <Label Content="Mot de passe : " HorizontalAlignment="Left" Margin="50,207,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblMotDePasse" Grid.Column="4"/>
+        <TextBox x:Name="txbIdentifiant_GUI" HorizontalAlignment="Left" Height="23" Margin="175,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbIdentifiant_GUI" TextChanged="TextBoxIdentifiant_TextChanged" Grid.Column="4"/>
+        <TextBox x:Name="txbMotDePasse_GUI" HorizontalAlignment="Left" Height="23" Margin="175,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbMotDePasse_GUI" TextChanged="TextBox_MDP_TextChanged" Grid.Column="4" TextInput="TxbMotDePasse_GUI_TextInput"/>
 
     </Grid>
 </Window>
