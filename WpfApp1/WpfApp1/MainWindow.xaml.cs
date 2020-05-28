@@ -123,7 +123,7 @@ namespace WpfApp1
                                     Console.WriteLine("Le mot de passe correct est : {0}", reader2.GetString(0));
                                     if (txbMotDePasse_GUI.Text == reader2.GetString(0))
                                     {
-                                        MessageBox.Show("Le mdp est correct");-+
+                                        MessageBox.Show("Le mdp est correct");
 
                                         PageHome home = new PageHome();
                                         home.Show();
