@@ -19,6 +19,7 @@
         <Label Content="Mot de passe : " HorizontalAlignment="Left" Margin="50,207,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblMotDePasse" Grid.Column="4"/>
         <TextBox x:Name="txbIdentifiant_GUI" HorizontalAlignment="Left" Height="23" Margin="175,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbIdentifiant_GUI" TextChanged="TextBoxIdentifiant_TextChanged" Grid.Column="4"/>
         <TextBox x:Name="txbMotDePasse_GUI" HorizontalAlignment="Left" Height="23" Margin="175,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txbMotDePasse_GUI" TextChanged="TextBox_MDP_TextChanged" Grid.Column="4" TextInput="TxbMotDePasse_GUI_TextInput"/>
+        <Label Content="Page Login" Grid.Column="4" HorizontalAlignment="Left" Margin="175,49,0,0" VerticalAlignment="Top" FontSize="20" Width="120"/>
 
     </Grid>
 </Window>

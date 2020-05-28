@@ -13,3 +13,5 @@ C:\Users\lance\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateRes
 C:\Users\lance\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\lance\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\lance\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\lance\source\repos\WpfApp1\WpfApp1\obj\Debug\PageHome.g.cs
+C:\Users\lance\source\repos\WpfApp1\WpfApp1\obj\Debug\PageHome.baml

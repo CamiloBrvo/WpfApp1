@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.PageHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="PageHome" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="51*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Page Home" Grid.Column="1" HorizontalAlignment="Left" Margin="194,40,0,0" VerticalAlignment="Top" Height="48" Width="128" FontSize="20"/>
+        <Button x:Name="btnInstruments" Content="Modifier/Ajouter un instrument" Grid.Column="1" HorizontalAlignment="Left" Margin="21,118,0,0" VerticalAlignment="Top" Width="212" Height="44" Click="BtnInstruments_Click"/>
+        <Button x:Name="btnQuitter" Content="Quitter" Grid.Column="1" HorizontalAlignment="Left" Margin="217,366,0,0" VerticalAlignment="Top" Width="74" Height="26" Click="Button_Click"/>
+        <Button x:Name="btnQuotienFamilial" Content="Modifier/Ajouter un quotien familial" Grid.Column="1" HorizontalAlignment="Left" Margin="259,118,0,0" VerticalAlignment="Top" Width="212" Height="44" Click="BtnQuotienFamilial_Click"/>
+        <Button x:Name="btnInscription_Eleves" Content="Affichage des inscriptions et des élèves" Grid.Column="1" HorizontalAlignment="Left" Margin="21,191,0,0" VerticalAlignment="Top" Width="212" Height="44" Click="BtnInscription_Eleves_Click"/>
+        <Button x:Name="btnCouts" Content="Saisie Coûts" Grid.Column="1" HorizontalAlignment="Left" Margin="259,191,0,0" VerticalAlignment="Top" Width="212" Height="44" Click="BtnCouts_Click"/>
+        <Button x:Name="btnCours" Content="Modifier/Ajouter un cours" Grid.Column="1" HorizontalAlignment="Left" Margin="142,269,0,0" VerticalAlignment="Top" Width="212" Height="44" Click="BtnCours_Click"/>
+
+    </Grid>
+</Window>

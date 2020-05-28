@@ -22,6 +22,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)//btnConnexion
@@ -69,7 +70,7 @@ namespace WpfApp1
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "localhost";
                 builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "stage";
+                builder.InitialCatalog = "ecoledemusique";
                 Console.WriteLine("Connexion info created : " + builder.ConnectionString);
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
@@ -122,7 +123,12 @@ namespace WpfApp1
                                     Console.WriteLine("Le mot de passe correct est : {0}", reader2.GetString(0));
                                     if (txbMotDePasse_GUI.Text == reader2.GetString(0))
                                     {
-                                        MessageBox.Show("Le mdp est correct");
+                                        MessageBox.Show("Le mdp est correct");-+
+
+                                        PageHome home = new PageHome();
+                                        home.Show();
+                                        //this.Hide();
+                                        this.Close();
                                     }
                                     else
                                     {
