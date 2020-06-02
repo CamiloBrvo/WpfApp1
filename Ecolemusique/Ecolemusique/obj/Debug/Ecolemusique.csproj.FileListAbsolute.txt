@@ -1,0 +1,9 @@
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\bin\Debug\Ecolemusique.exe.config
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\bin\Debug\Ecolemusique.exe
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\bin\Debug\Ecolemusique.pdb
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\obj\Debug\Ecolemusique.csprojAssemblyReference.cache
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\obj\Debug\Ecolemusique.Form1.resources
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\obj\Debug\Ecolemusique.Properties.Resources.resources
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\obj\Debug\Ecolemusique.csproj.GenerateResource.cache
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\obj\Debug\Ecolemusique.exe
+E:\BTS\BTS 1\SLAM\PPE\Stage\Ecolemusique\Ecolemusique\obj\Debug\Ecolemusique.pdb
