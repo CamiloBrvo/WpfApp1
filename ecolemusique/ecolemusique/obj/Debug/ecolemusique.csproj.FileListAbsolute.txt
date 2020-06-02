@@ -1,0 +1,12 @@
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\bin\Debug\ecolemusique.exe.config
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\bin\Debug\ecolemusique.exe
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\bin\Debug\ecolemusique.pdb
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.csprojAssemblyReference.cache
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.Form1.resources
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.Properties.Resources.resources
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.csproj.GenerateResource.cache
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.csproj.CoreCompileInputs.cache
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.exe
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.pdb
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.Form2.resources
+C:\Users\lance\source\repos\ecolemusique\ecolemusique\obj\Debug\ecolemusique.AfficheInscriptionsetEleves.resources
