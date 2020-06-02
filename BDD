@@ -1,0 +1,128 @@
+/*------------------------------------------------------------
+*        Script SQLSERVER 
+------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------
+-- Table: responsables
+------------------------------------------------------------*/
+CREATE TABLE responsables(
+	id                  INT IDENTITY (1,1) NOT NULL ,
+	nom                 VARCHAR (50) NOT NULL ,
+	prenom              VARCHAR (50) NOT NULL ,
+	adresse             VARCHAR (50) NOT NULL ,
+	ville               VARCHAR (50) NOT NULL ,
+	code_postal         CHAR (5)  NOT NULL ,
+	email               VARCHAR (50) NOT NULL ,
+	quotient_familial   INT  NOT NULL ,
+	tel1                CHAR (10)  NOT NULL ,
+	tel2                CHAR (10)  NOT NULL ,
+	tel3                CHAR (5)  NOT NULL  ,
+	CONSTRAINT responsables_PK PRIMARY KEY (id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: instruments
+------------------------------------------------------------*/
+CREATE TABLE instruments(
+	id        INT IDENTITY (1,1) NOT NULL ,
+	libelle   VARCHAR (50) NOT NULL  ,
+	CONSTRAINT instruments_PK PRIMARY KEY (id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: eleves
+------------------------------------------------------------*/
+CREATE TABLE eleves(
+	id                INT IDENTITY (1,1) NOT NULL ,
+	nom               VARCHAR (50) NOT NULL ,
+	prenom            VARCHAR (50) NOT NULL ,
+	date_naiss        DATETIME NOT NULL ,
+	id_responsables   INT  NOT NULL  ,
+	CONSTRAINT eleves_PK PRIMARY KEY (id)
+
+	,CONSTRAINT eleves_responsables_FK FOREIGN KEY (id_responsables) REFERENCES responsables(id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: tranches
+------------------------------------------------------------*/
+CREATE TABLE tranches(
+	id             INT IDENTITY (1,1) NOT NULL ,
+	quotient_min   INT  NOT NULL  ,
+	CONSTRAINT tranches_PK PRIMARY KEY (id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: type_cour
+------------------------------------------------------------*/
+CREATE TABLE type_cour(
+	id        INT IDENTITY (1,1) NOT NULL ,
+	libelle   VARCHAR (50) NOT NULL  ,
+	CONSTRAINT type_cour_PK PRIMARY KEY (id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: cours
+------------------------------------------------------------*/
+CREATE TABLE cours(
+	id               INT IDENTITY (1,1) NOT NULL ,
+	libelle          VARCHAR (50) NOT NULL ,
+	agemini          INT  NOT NULL ,
+	agemaxi          INT  NOT NULL ,
+	nbplaces         INT  NOT NULL ,
+	id_instruments   INT  NOT NULL ,
+	id_type_cour     INT  NOT NULL  ,
+	CONSTRAINT cours_PK PRIMARY KEY (id)
+
+	,CONSTRAINT cours_instruments_FK FOREIGN KEY (id_instruments) REFERENCES instruments(id)
+	,CONSTRAINT cours_type_cour0_FK FOREIGN KEY (id_type_cour) REFERENCES type_cour(id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: inscriptions
+------------------------------------------------------------*/
+CREATE TABLE inscriptions(
+	id                    INT IDENTITY (1,1) NOT NULL ,
+	nombre_de_paiements   INT  NOT NULL ,
+	id_eleves             INT  NOT NULL ,
+	id_cours              INT  NOT NULL  ,
+	CONSTRAINT inscriptions_PK PRIMARY KEY (id)
+
+	,CONSTRAINT inscriptions_eleves_FK FOREIGN KEY (id_eleves) REFERENCES eleves(id)
+	,CONSTRAINT inscriptions_cours0_FK FOREIGN KEY (id_cours) REFERENCES cours(id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: utilisateur
+------------------------------------------------------------*/
+CREATE TABLE utilisateur(
+	id      INT IDENTITY (1,1) NOT NULL ,
+	mdp     VARCHAR (50) NOT NULL ,
+	email   VARCHAR (50) NOT NULL  ,
+	CONSTRAINT utilisateur_PK PRIMARY KEY (id)
+);
+
+
+/*------------------------------------------------------------
+-- Table: couter
+------------------------------------------------------------*/
+CREATE TABLE couter(
+	id             INT  NOT NULL ,
+	id_type_cour   INT  NOT NULL ,
+	montant        INT  NOT NULL  ,
+	CONSTRAINT couter_PK PRIMARY KEY (id,id_type_cour)
+
+	,CONSTRAINT couter_tranches_FK FOREIGN KEY (id) REFERENCES tranches(id)
+	,CONSTRAINT couter_type_cour0_FK FOREIGN KEY (id_type_cour) REFERENCES type_cour(id)
+);
+
+
+
