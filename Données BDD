@@ -1,0 +1,55 @@
+/* COMMANDE 1 */
+/*
+INSERT INTO utilisateur VALUES ('admin','admin@admin.com')
+SELECT * FROM utilisateur
+*/
+/* COMMANDE 2 */
+/*
+INSERT INTO type_cour VALUES ('Musique')
+SELECT * FROM type_cour
+*/
+/* COMMANDE 3 */
+/*
+INSERT INTO tranches VALUES (50)
+SELECT * FROM tranches
+*/
+/* COMMANDE 4 */
+/*
+INSERT INTO responsables VALUES ('Durant', 'Mark', '1 rue des Potiers', 'Lyon', 6900, 'mdurant@gmail.com', 50, 0101010101, 0101010101, 0101010101)
+INSERT INTO responsables VALUES ('Legrand', 'Paul', '5 avenue michelin', 'Lyon', 6900, 'plegrand@gmail.com', 15, 0202020202, 0202020202, 0202020202)
+SELECT * FROM responsables
+*/
+/* COMMANDE 5 */
+/*
+INSERT INTO instruments VALUES ('Piano')
+INSERT INTO instruments VALUES ('Trompette')
+INSERT INTO instruments VALUES ('Guitare')
+INSERT INTO instruments VALUES ('Triangle')
+SELECT * FROM instruments
+*/
+/* COMMANDE 6 */
+/*
+INSERT INTO eleves VALUES ('Roche', 'Martin', '2008-01-05 06:30:42', 1)
+INSERT INTO eleves VALUES ('Dumas', 'Pierre', '2005-05-08 08:11:52', 2)
+INSERT INTO eleves VALUES ('Dupont', 'Jean', '2001-11-03 09:30:42', 1)
+SELECT * FROM eleves
+*/
+/* COMMANDE 7 */
+/*
+INSERT INTO cours VALUES ('Cours de Piano', 6, 17, 5, 1, 1)
+INSERT INTO cours VALUES ('Cours de Guitare', 6, 17, 5, 3, 1)
+INSERT INTO cours VALUES ('Cours de Triangle', 5, 17, 5, 4, 1)
+SELECT * FROM cours
+*/
+/* COMMANDE 8 */
+/*
+INSERT INTO inscriptions VALUES (5, 1, 1)
+INSERT INTO inscriptions VALUES (7, 2, 1)
+INSERT INTO inscriptions VALUES (15, 3, 1)
+SELECT * FROM inscriptions
+*/
+/* COMMANDE 9 */
+/*
+INSERT INTO couter VALUES (1, 1, 5)
+SELECT * FROM couter
+*/
