@@ -80,12 +80,8 @@ namespace ecolemusique
             {
                 dgvEleves.Rows.Clear();//clear le dgv
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
-                Console.WriteLine("Connexion info created : " + builder.ConnectionString);
-
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
+                
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -128,12 +124,7 @@ namespace ecolemusique
             {
                 dgvInscriptions.Rows.Clear();//clear le dgv
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
-                Console.WriteLine("Connexion info created : " + builder.ConnectionString);
-
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -176,12 +167,7 @@ namespace ecolemusique
             {
                 cbByCours.Items.Clear();//clear le cb
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
-                Console.WriteLine("Connexion info created : " + builder.ConnectionString);
-
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -226,10 +212,7 @@ namespace ecolemusique
             {
                 dgvInscriptions.Rows.Clear();
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -267,10 +250,7 @@ namespace ecolemusique
 
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -305,10 +285,7 @@ namespace ecolemusique
 
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -342,10 +319,7 @@ namespace ecolemusique
 
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -378,10 +352,7 @@ namespace ecolemusique
             {
                 dgvEleves.Rows.Clear();
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -418,10 +389,7 @@ namespace ecolemusique
             {
                 dgvEleves.Rows.Clear();
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -458,10 +426,7 @@ namespace ecolemusique
             {
                 dgvEleves.Rows.Clear();
 
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -497,10 +462,7 @@ namespace ecolemusique
             try
             {
                 dgvInscriptions.Rows.Clear();
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();

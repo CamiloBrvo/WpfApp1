@@ -49,10 +49,7 @@ namespace ecolemusique
 
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     StringBuilder sb = new StringBuilder();
@@ -86,10 +83,7 @@ namespace ecolemusique
         {
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 Console.WriteLine("Connexion info created : " + builder.ConnectionString);
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
@@ -120,10 +114,7 @@ namespace ecolemusique
         {
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 Console.WriteLine("Connexion info created : " + builder.ConnectionString);
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
@@ -154,10 +145,7 @@ namespace ecolemusique
         {
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
                 Console.WriteLine("Connexion info created : " + builder.ConnectionString);
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))

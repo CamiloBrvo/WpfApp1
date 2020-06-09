@@ -46,11 +46,7 @@ namespace ecolemusique
             Console.WriteLine("InitConnection");
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";
-                builder.IntegratedSecurity = true;
-                builder.InitialCatalog = "ecoledemusique";
-                Console.WriteLine("Connexion info created : " + builder.ConnectionString);
+                SqlConnectionStringBuilder builder = Home.initSqlConnectionStringBuilder();
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {

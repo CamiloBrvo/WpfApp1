@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ecolemusique
 {
@@ -51,6 +52,14 @@ namespace ecolemusique
             AfficheInscriptionsetEleves afficheInscriptionsetEleves = new AfficheInscriptionsetEleves();
             afficheInscriptionsetEleves.Show();
             this.Hide();
+        }
+        public static SqlConnectionStringBuilder initSqlConnectionStringBuilder()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "localhost";
+            builder.IntegratedSecurity = true;
+            builder.InitialCatalog = "ecoledemusique";
+            return builder;
         }
     }
 }
